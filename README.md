@@ -2,7 +2,7 @@
 
 This package allow to display errors from laravel validation rules
 
-! This package nwork with vue-resource !
+! This package works with vue-resource !
 
 # Installation
 
