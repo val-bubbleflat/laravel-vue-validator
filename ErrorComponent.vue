@@ -1,5 +1,5 @@
 <template>
-    <div v-if="$errors.has(input)" class="txt-darkRed">
+    <div v-if="$errors.has(input)" class="alert-error">
         {{ $errors.first(input) }}
     </div>
 </template>
