@@ -1,0 +1,25 @@
+{
+  "name": "laravel-vue-validator",
+  "version": "1.0.0",
+  "description": " Simple package to display error in vue from laravel validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/val-bubbleflat/laravel-vue-validator.git"
+  },
+  "keywords": [
+    "laravel",
+    "vue",
+    "validate",
+    "validator"
+  ],
+  "author": "val bubbleflat <valentin@bubbleflat.com> (bubbleflat.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/val-bubbleflat/laravel-vue-validator/issues"
+  },
+  "homepage": "https://github.com/val-bubbleflat/laravel-vue-validator#readme"
+}
