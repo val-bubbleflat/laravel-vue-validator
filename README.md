@@ -1,6 +1,6 @@
 # Laravel Vue Validator
 
-By [bubbleflat.com](bubbleflat.com)
+By [bubbleflat.com](https://bubbleflat.com)
 
 This package allow to display errors from laravel validation rules
 
