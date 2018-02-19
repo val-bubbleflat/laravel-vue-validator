@@ -8,12 +8,15 @@ This package allow to display errors from laravel validation rules
 
 # Installation
 
-  ```npm install --save laravel-vue-validator
+```
+npm install --save laravel-vue-validator
+```
 
-  import LaravelVueValidator from 'laravel-vue-validator'
+```javascript
+import LaravelVueValidator from 'laravel-vue-validator'
   
-  Vue.use(LaravelVueValidator)
-  ```
+Vue.use(LaravelVueValidator)
+```
 
 # Usage Example
 
@@ -33,32 +36,32 @@ To flush errors in a vue component:
 
 # Full Example
 
-	```
-	<template>
-	    <input type='text' v-model='name' />
-	    <!-- 
-	    error do not need v-if,
-	    its content is displayed only if "name" has error after validation"
-	    -->
-	   	<error input="name" />
-    	<button @click="submit">Submit</button>
-	</template>
-	<script>
+```html
+<template>
+	<input type='text' v-model='name' />
+	<!-- 
+	error do not need v-if,
+	its content is displayed only if "name" has error after validation"
+	-->
+	<error input="name" />
+	<button @click="submit">Submit</button>
+</template>
+<script>
 
-	export default {
+export default {
 
-		data(){
-			return{
-				name: ''
-			}
-		},
-
-		methods(){
-			// Error are displayed if Laravel backend return 422 Http code with name as error
-			this.$http.post('/submit', {name: this.name});
+	data(){
+		return{
+			name: ''
 		}
+	},
 
+	methods(){
+		// Error are displayed if Laravel backend return 422 Http code with name as error
+		this.$http.post('/submit', {name: this.name});
 	}
 
-	</script>
-	```
+}
+
+</script>
+```
