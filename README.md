@@ -4,7 +4,8 @@ By [bubbleflat.com](https://bubbleflat.com)
 
 This package allow to display errors from laravel validation rules
 
-! This package needs vue-resource to work !
+# Requirements
+[Vue Resource](https://github.com/pagekit/vue-resource) or [Axios](https://github.com/axios/axios)
 
 # Installation
 
@@ -56,9 +57,15 @@ export default {
 		}
 	},
 
-	methods(){
+	methods : {
 		// Error are displayed if Laravel backend return 422 Http code with name as error
-		this.$http.post('/submit', {name: this.name});
+		submit() {
+			// submit via vue resource
+			this.$http.post('/submit', {name: this.name});
+	
+			// submit via axios
+			axios.post('/submit', {name: this.name});
+		}
 	}
 
 }
